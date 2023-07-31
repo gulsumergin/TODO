@@ -1,0 +1,230 @@
+body {
+  background-color: rgba(167, 151, 130, 0.838);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column; /* Stack the elements vertically */
+  align-items: center; /* Center the items horizontally */
+  width: 70%;
+  height: 70%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: bisque;
+  border-radius: 7px;
+  padding: 40px 10px;
+  justify-content: center;
+ 
+}
+/* Styles for the To-Do card */
+.card {
+  border: 2px solid #684848a5;
+  border-radius: 30px;
+  padding: 10px 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 500px;
+ 
+
+  
+}
+
+.card-header {
+
+  font-size: 23px; /* Increase the font size */
+  font-weight: bold;
+  font-family: Arial; /* Use a modern font stack */
+  color: rgba(167, 151, 130, 0.466); /* Coral color for the header */
+  margin-bottom: 15px; /* Slightly increase the margin at the bottom */
+  text-align: center; /* Center the header text */
+  text-transform: uppercase; /* Uppercase the header text */
+  letter-spacing: 1px; /* Add some letter spacing for a subtle effect */
+  text-shadow: 1px 1px 1px rgba(99, 39, 39, 0.893); /* Add a text shadow for depth */
+}
+
+.card-title {
+  font-size: 23px; /* Increase the font size */
+  font-weight: bold;
+  font-family: Arial; /* Use a modern font stack */
+  color: rgba(167, 151, 130, 0.466); /* Coral color for the header */
+  margin-bottom: 15px; /* Slightly increase the margin at the bottom */
+  text-align: center; /* Center the header text */
+  text-transform: uppercase; /* Uppercase the header text */
+  letter-spacing: 1px; /* Add some letter spacing for a subtle effect */
+  text-shadow: 0px 1px 1px rgba(99, 39, 39, 0.893); /* Add a text shadow for depth */
+  margin-top: 0px;
+}
+.card-body {
+  padding: 15px 20px;
+  
+  
+
+}
+
+/* Form styles */
+.form-control {
+  margin-left: -10px;
+  width: 100%;
+  padding: 10px 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  color: rgb(96, 87, 87);
+
+  
+}
+
+.form-row {
+  margin-bottom: 10px;
+  
+}
+
+/* Optional: You can add additional styles to further customize the appearance of the date input boxes */
+/* For example, changing the background color and text color when focused */
+.form-control:focus {
+  outline: none;
+  border-color: #632d32; /* Change the border color when focused */
+  box-shadow: 1px 0 3px #c5404e; /* Add a subtle box shadow when focused */
+  
+
+}
+
+/* Optional: You can adjust the padding to create spacing between the date input boxes */
+.form-row input[type="date"] {
+  padding-right: 5px;
+}
+
+/* Optional: You can adjust the width to change the size of the date input boxes */
+.form-row input[type="date"] {
+  width: 150px;
+}
+
+/* Button styles */
+.btn.btn-add {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  transition: opacity 0.15s;
+  background-color: #c5404e;
+  color: #fff;
+}
+
+/* Remove the space between .btn.btn-danger and :hover */
+.btn.btn-add:hover {
+  opacity: 0.8;
+}
+
+/* Remove the space between .btn.btn-danger and :active */
+.btn.btn-add:active {
+  opacity: 0.2;
+}
+
+.btn.btn-clear {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  transition: opacity 0.15s;
+  background-color: #343a40;
+  color: #fff;
+}
+
+.btn.btn-clear:hover {
+  opacity: 0.8; /* Adjust the opacity to your preference for the hover effect */
+}
+.btn.btn-clear:active {
+  opacity: 0.2;
+}
+
+/* List styles */
+.list-group {
+  list-style: none;
+  padding: 0;
+}
+
+.list-group-item {
+  background-color: #f7f7f7;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 5px;
+  word-break: break-word;
+}
+
+
+.alert-message {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 8px 8px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  border: 1px solid #f5c6cb;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.list-group-item {
+  /* Assuming you want the todo text to take the full width */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delete-item {
+  /* Adjust the margin-right to create space between todo text and delete icon */
+  margin-right: 1px;
+  color: #721c24;
+  padding: auto;
+  
+ 
+}
+
+.list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #47414180;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px 10px;
+  margin-bottom: 7px;
+  word-break: break-word;
+  
+}
+
+.todo-dates {
+  font-size: 14px;
+  color: #892a2a;
+  white-space: nowrap; /* Prevent the dates from wrapping to the next line */
+}
+/* Styles for dates in the past */
+.list-group-item.past-date {
+  color: rgb(146, 9, 9);
+  text-decoration: line-through; /* Add this line */
+  font-style: oblique;
+  
+}
+
+/* Styles for dates within one day of the current date */
+.list-group-item.near-date {
+  color: rgb(216, 196, 105);
+  
+}
+
+/* Styles for dates in the future */
+.list-group-item.future-date {
+  color: black;
+}
